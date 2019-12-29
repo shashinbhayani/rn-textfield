@@ -134,8 +134,8 @@ export default class TextField extends Component {
       <View style={{ height: 50, justifyContent: "center" }}>
         
         {this.props.label ? <Animated.Text style={labelStyle}>{this.props.label}</Animated.Text> : null}
-        <View style={{flexDirection: "row", alignItems: "center"}}>
-          <View onLayout={this.onLeftAccLayout}>
+        <View style={{flexDirection: "row", alignItems: "center",}}>
+          <View style={{justifyContent: "center", alignItems: "center", flexDirection: "row"}} onLayout={this.onLeftAccLayout}>
             {this._renderLeftAccessory()}
           </View>
           <TextInput
