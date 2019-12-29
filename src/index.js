@@ -1,3 +1,3 @@
-import TextField from './TextField';
+import RNTextField from './TextField';
 
-export default TextField
+export default RNTextField
